@@ -1,0 +1,153 @@
+#!/usr/bin/env rake
+require 'rubygems'
+require 'bundler'
+Bundler.setup :default, :test, :development, :spec
+Bundler.require
+require File.expand_path("../../core/init.rb", __FILE__)
+require 'rspec/core/rake_task'
+
+
+RSpec::Core::RakeTask.new(:spec) do |spec|
+  ENV["RACK_ENV"] = "spec"
+  spec.pattern = ENV["SPECS"] || 'spec/**/*spec.rb'
+  spec.rspec_opts = "--format documentation"
+end
+
+task :rails_env do
+end
+
+task :environment do
+end
+
+task :getenv do
+  Dir["**/**.rb"].concat(Dir["**/**.yml"]).each do |f|
+    data = File
+      .read(f)
+      .scan(/ENV\[["'](.+)["']\]/)
+    unless(data == [])
+      puts(f)
+      result = data.map(&:first)
+      result.zip(result.map{|x| ENV[x]}).each{|x, y| puts("export #{x}=\"#{y}\"")}
+      puts
+    end
+  end
+end
+
+# namespace :g do
+  # task :districts do
+    # require File.expand_path("../application", __FILE__)
+    # DistrictReader.run
+  # end
+# end
+
+task :console do
+  require File.expand_path("../application", __FILE__)
+  include API::Entities
+  require 'pry'; binding.pry
+end
+
+task :airborne, :entity, :prefix do |t, args|
+  require File.expand_path("../application", __FILE__)
+  include API::Entities
+  entity = eval(args[:entity])
+  prefix = args[:prefix]
+  puts(entity.airborne_expect(prefix))
+  puts
+  exit!
+end
+
+task :set_default_android_version do
+  require File.expand_path("../application", __FILE__)
+  version = Settings.get("version.android")
+  puts(version)
+  Settings.create!(var: "version.android", value: "1.0.0") if version.nil?
+end
+
+task :initialize_users_referral_code do
+  require File.expand_path("../application", __FILE__)
+  unitialize = User.where(referral_code: nil)
+  unitialize.find_each do |u|
+    u.initialize_users_referral_code!
+    begin
+      u.save!
+    rescue
+      uu = u.user_info
+      uu.phone = nil
+      uu.save!
+    end
+  end
+  unitialize.find_each{|u| u.initialize_referral_code!; u.save!  }
+end
+
+task default:  :spec
+
+module Rails
+
+  def self.application
+    Struct.new(:config, :paths) do
+      def load_seed
+        require File.expand_path('../application', __FILE__)
+        require File.expand_path('../db/seeds', __FILE__)
+      end
+    end.new(config, paths)
+  end
+
+  def self.config
+    require 'erb'
+    db_config = YAML.load(ERB.new(File.read("config/database.yml")).result)
+    Struct.new(:database_configuration).new(db_config)
+  end
+
+  def self.paths
+    { 'db/migrate' => ["#{root}/db/migrate"] }
+  end
+
+  def self.env
+    env = ENV['RACK_ENV'] || "development"
+    ActiveSupport::StringInquirer.new(env)
+  end
+
+  def self.root
+    File.dirname(__FILE__)
+  end
+
+  def self.production?
+    ENV["RACK_ENV"] == "production"
+  end
+
+  def self.development?
+    ENV["RACK_ENV"] == "development"
+  end
+end
+
+namespace :g do
+  desc "Generate migration. Specify name in the NAME variable"
+  task :migration => :environment do
+    name = ENV['NAME'] || raise("Specify name: rake g:migration NAME=create_users")
+    timestamp = Time.now.strftime("%Y%m%d%H%M%S")
+
+    path = File.expand_path("../db/migrate/#{timestamp}_#{name}.rb", __FILE__)
+    migration_class = name.split("_").map(&:capitalize).join
+
+    File.open(path, 'w') do |file|
+      file.write <<-EOF
+class #{migration_class} < ActiveRecord::Migration
+  def self.up
+  end
+
+  def self.down
+  end
+end
+      EOF
+    end
+
+    puts "DONE"
+    puts path
+  end
+end
+
+# Rake.load_rakefile "active_record/railties/databases.rake"
+# Rake.load_rakefile "rake_tasks/aws/sns/register_merchant.rake"
+# Rake.load_rakefile "rake_tasks/aws/sns/register_subdistrict.rake"
+# Rake.load_rakefile "rake_tasks/g_districts.rb"
+Rake.load_rakefile "../core/rake_tasks/component.rake"
