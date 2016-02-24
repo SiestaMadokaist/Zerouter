@@ -25,7 +25,7 @@ class Ramadoka::Endpoint::Base
   def self.initialize_mounted_class!
     @mounted_class = Class.new(Grape::API)
     @mounted_class.instance_exec do
-      format :json
+      # format :json
     end
   end
 
@@ -75,8 +75,13 @@ class Ramadoka::Endpoint::Base
     @mounted_class
   end
 
+  attr_reader(:request)
   def initialize(request)
     @request = request
+  end
+
+  def ip
+    @request.env["HTTP_X_FORWARDED_FOR"]
   end
 
   def params
