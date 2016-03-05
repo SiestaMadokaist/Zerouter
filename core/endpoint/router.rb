@@ -30,8 +30,8 @@ class Ramadoka::Endpoint::Router
   end
 
   # @param value [String]
-  def description(value)
-    @description = "(#{@klass}) - #{value}"
+  def description(value="")
+    @description = "(#{@klass}.#{@callback}) - #{value}"
   end
 
   # @param value [Class]
@@ -39,13 +39,14 @@ class Ramadoka::Endpoint::Router
     @presenter = value
   end
 
+  # @param error_code [Integer]
   # @param err [Class]
-  def error(err)
-    @errors << err
+  def error(error_code, err)
+    @errors << [error_code, err.to_s, Ramadoka::Entity::Errors]
   end
 
   # @param value [Symbol]
-  # @param value Value: [:POST, :GET, :DELETE, :HEAD, :MATCH, ...]
+  # @param value Value: [:post, :get, :delete, :head, :, ...]
   def method(value)
     @method = value
   end

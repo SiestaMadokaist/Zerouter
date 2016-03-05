@@ -24,9 +24,6 @@ class Ramadoka::Endpoint::Base
 
   def self.initialize_mounted_class!
     @mounted_class = Class.new(Grape::API)
-    @mounted_class.instance_exec do
-      format :json
-    end
   end
 
   def self.routes
@@ -52,8 +49,8 @@ class Ramadoka::Endpoint::Base
     method :get
     description "when the item is not found"
     presenter Ramadoka::Entity::Base
-    error ActiveRecord::RecordNotFound
-    error ActiveRecord::RecordNotUnique
+    error 503, ActiveRecord::RecordNotFound
+    error 503, ActiveRecord::RecordNotUnique
     optional :optional_param, type: Integer, default: 1
   end
 
@@ -64,11 +61,19 @@ class Ramadoka::Endpoint::Base
     end
   end
 
+  def self.inherit!
+    superclass.routes.each do |methodname, prouter|
+      if(routes[methodname].nil?)
+        routes[methodname] = prouter
+        new_router = prouter.meta_copy_to_different_klass(self)
+        new_router.add_logic_to(@mounted_class)
+      end
+    end
+  end
+
   def self.inherited(subklass)
     subklass.initialize_route!
     subklass.initialize_mounted_class!
-    @routes.each{|k, v| subklass.routes[k] = v if subklass.routes[k].nil? }
-    subklass.copy_parent_logic!
   end
 
   def self.mounted_class

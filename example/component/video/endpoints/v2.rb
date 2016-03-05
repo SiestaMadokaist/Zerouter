@@ -18,13 +18,6 @@ class Component::Video::Endpoint::V2 < Component::Video::Endpoint::V1
     o.data = 5
     [o, o]
   end
-  @mounted_class.instance_exec do
-    before do
-       header["Access-Control-Allow-Origin"] = headers["Origin"]
-       header['Access-Control-Allow-Headers'] = headers["Access-Control-Request-Headers"] #unless headers["Access-Control-Request-Headers"].nil?
-       header['Access-Control-Allow-Methods'] = 'GET, POST, PATCH, PUT, DELETE, OPTIONS, HEAD'
-       header['Access-Control-Expose-Headers'] = 'ETag'
-       header['Access-Control-Allow-Credentials'] = 'true'
-    end
-  end
+
+  inherit!
 end

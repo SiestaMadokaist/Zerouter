@@ -2110,3 +2110,665 @@
 [2016-02-09 15:17:04 +0700 Ramas-MacBook-Pro.local (3692)] ERROR : Invalid license key, please contact support@newrelic.com
 [2016-02-09 15:17:04 +0700 Ramas-MacBook-Pro.local (3692)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
 [2016-02-09 15:17:18 +0700 Ramas-MacBook-Pro.local (3692)] INFO : Starting Agent shutdown
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Starting the New Relic agent in "development" environment.
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Environment: development
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Dispatcher: puma
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Application: development
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Installing ActiveRecord instrumentation
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Installing middleware-based Excon instrumentation
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Installing Net instrumentation
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Installing Sinatra instrumentation
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Finished instrumentation
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Starting the New Relic agent in "development" environment.
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Environment: development
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Dispatcher: puma
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Application: development
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Installing Typhoeus instrumentation
+[2016-02-09 16:43:03 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Installing Grape instrumentation
+[2016-02-09 16:43:07 +0700 Ramas-MacBook-Pro.local (4563)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-02-09 16:43:07 +0700 Ramas-MacBook-Pro.local (4563)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-02-09 16:43:09 +0700 Ramas-MacBook-Pro.local (4563)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-02-09 16:43:09 +0700 Ramas-MacBook-Pro.local (4563)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-02-09 16:45:26 +0700 Ramas-MacBook-Pro.local (4563)] INFO : Starting Agent shutdown
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : Starting the New Relic agent in "development" environment.
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : Environment: development
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : Dispatcher: puma
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : Application: development
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : Installing ActiveRecord instrumentation
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : Installing middleware-based Excon instrumentation
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : Installing Net instrumentation
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : Installing Sinatra instrumentation
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-02-09 16:45:29 +0700 Ramas-MacBook-Pro.local (4595)] INFO : Finished instrumentation
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Starting the New Relic agent in "development" environment.
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Environment: development
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Dispatcher: puma
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Application: development
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Installing ActiveRecord instrumentation
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Installing middleware-based Excon instrumentation
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Installing Net instrumentation
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Installing Sinatra instrumentation
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Finished instrumentation
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Starting the New Relic agent in "development" environment.
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Environment: development
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Dispatcher: puma
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Application: development
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Installing Typhoeus instrumentation
+[2016-02-09 16:45:51 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Installing Grape instrumentation
+[2016-02-09 16:46:00 +0700 Ramas-MacBook-Pro.local (4597)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-02-09 16:46:00 +0700 Ramas-MacBook-Pro.local (4597)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-02-09 16:46:02 +0700 Ramas-MacBook-Pro.local (4597)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-02-09 16:46:02 +0700 Ramas-MacBook-Pro.local (4597)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-02-09 16:49:59 +0700 Ramas-MacBook-Pro.local (4597)] INFO : Starting Agent shutdown
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Starting the New Relic agent in "development" environment.
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Environment: development
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Dispatcher: puma
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Application: development
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Installing ActiveRecord instrumentation
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Installing middleware-based Excon instrumentation
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Installing Net instrumentation
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Installing Sinatra instrumentation
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-02-09 16:50:02 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Finished instrumentation
+[2016-02-09 16:50:03 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Starting the New Relic agent in "development" environment.
+[2016-02-09 16:50:03 +0700 Ramas-MacBook-Pro.local (4627)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-02-09 16:50:03 +0700 Ramas-MacBook-Pro.local (4627)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-02-09 16:50:03 +0700 Ramas-MacBook-Pro.local (4627)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-02-09 16:50:03 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Environment: development
+[2016-02-09 16:50:03 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Dispatcher: puma
+[2016-02-09 16:50:03 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Application: development
+[2016-02-09 16:50:03 +0700 Ramas-MacBook-Pro.local (4627)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-02-09 16:50:03 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-02-09 16:50:03 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-02-09 16:50:03 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Installing Typhoeus instrumentation
+[2016-02-09 16:50:03 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Installing Grape instrumentation
+[2016-02-09 16:50:10 +0700 Ramas-MacBook-Pro.local (4627)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-02-09 16:50:10 +0700 Ramas-MacBook-Pro.local (4627)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-02-09 16:50:12 +0700 Ramas-MacBook-Pro.local (4627)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-02-09 16:50:12 +0700 Ramas-MacBook-Pro.local (4627)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-02-09 21:23:22 +0700 Ramas-MacBook-Pro.local (4627)] INFO : Starting Agent shutdown
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : Environment: development
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : Dispatcher: puma
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : Application: development
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : Installing Net instrumentation
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : Installing Sinatra instrumentation
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 22:33:33 +0700 Ramas-MBP (826)] INFO : Finished instrumentation
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : Environment: development
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : Dispatcher: puma
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : Application: development
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : Installing Net instrumentation
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : Installing Sinatra instrumentation
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 22:34:52 +0700 Ramas-MBP (969)] INFO : Finished instrumentation
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : Environment: development
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : Dispatcher: puma
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : Application: development
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : Installing Net instrumentation
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : Installing Sinatra instrumentation
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 22:35:43 +0700 Ramas-MBP (971)] INFO : Finished instrumentation
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Environment: development
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Dispatcher: puma
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Application: development
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Installing Net instrumentation
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Installing Sinatra instrumentation
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Finished instrumentation
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Environment: development
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Dispatcher: puma
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Application: development
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Installing Typhoeus instrumentation
+[2016-03-05 22:36:38 +0700 Ramas-MBP (973)] INFO : Installing Grape instrumentation
+[2016-03-05 22:36:46 +0700 Ramas-MBP (973)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 22:36:46 +0700 Ramas-MBP (973)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 22:36:49 +0700 Ramas-MBP (973)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 22:36:49 +0700 Ramas-MBP (973)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 22:38:17 +0700 Ramas-MBP (973)] INFO : Starting Agent shutdown
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : Environment: development
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : Dispatcher: puma
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : Application: development
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : Installing Net instrumentation
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : Installing Sinatra instrumentation
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 22:38:21 +0700 Ramas-MBP (1000)] INFO : Finished instrumentation
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Environment: development
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Dispatcher: puma
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Application: development
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Installing Net instrumentation
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Installing Sinatra instrumentation
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Finished instrumentation
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Environment: development
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Dispatcher: puma
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Application: development
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Installing Typhoeus instrumentation
+[2016-03-05 22:58:45 +0700 Ramas-MBP (1297)] INFO : Installing Grape instrumentation
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : Environment: development
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : Dispatcher: puma
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : Application: development
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : Installing Net instrumentation
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : Installing Sinatra instrumentation
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 22:58:56 +0700 Ramas-MBP (1309)] INFO : Finished instrumentation
+[2016-03-05 22:58:57 +0700 Ramas-MBP (1309)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 22:58:57 +0700 Ramas-MBP (1309)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 22:58:57 +0700 Ramas-MBP (1309)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 22:58:57 +0700 Ramas-MBP (1309)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 22:58:57 +0700 Ramas-MBP (1309)] INFO : Environment: development
+[2016-03-05 22:58:57 +0700 Ramas-MBP (1309)] INFO : Dispatcher: puma
+[2016-03-05 22:58:57 +0700 Ramas-MBP (1309)] INFO : Application: development
+[2016-03-05 22:58:57 +0700 Ramas-MBP (1309)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 22:58:57 +0700 Ramas-MBP (1309)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-03-05 22:58:57 +0700 Ramas-MBP (1309)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 22:58:57 +0700 Ramas-MBP (1309)] INFO : Installing Typhoeus instrumentation
+[2016-03-05 22:58:57 +0700 Ramas-MBP (1309)] INFO : Installing Grape instrumentation
+[2016-03-05 22:59:12 +0700 Ramas-MBP (1309)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 22:59:12 +0700 Ramas-MBP (1309)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 22:59:14 +0700 Ramas-MBP (1309)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 22:59:14 +0700 Ramas-MBP (1309)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 22:59:45 +0700 Ramas-MBP (1309)] INFO : Starting Agent shutdown
+[2016-03-05 22:59:50 +0700 Ramas-MBP (1340)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 22:59:50 +0700 Ramas-MBP (1340)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 22:59:50 +0700 Ramas-MBP (1340)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 22:59:50 +0700 Ramas-MBP (1340)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 22:59:50 +0700 Ramas-MBP (1340)] INFO : Environment: development
+[2016-03-05 22:59:50 +0700 Ramas-MBP (1340)] INFO : No known dispatcher detected.
+[2016-03-05 22:59:50 +0700 Ramas-MBP (1340)] INFO : Application: development
+[2016-03-05 22:59:50 +0700 Ramas-MBP (1340)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 22:59:51 +0700 Ramas-MBP (1340)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 22:59:51 +0700 Ramas-MBP (1340)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 22:59:51 +0700 Ramas-MBP (1340)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 22:59:51 +0700 Ramas-MBP (1340)] INFO : Installing Net instrumentation
+[2016-03-05 22:59:51 +0700 Ramas-MBP (1340)] INFO : Installing Sinatra instrumentation
+[2016-03-05 22:59:51 +0700 Ramas-MBP (1340)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 22:59:51 +0700 Ramas-MBP (1340)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 22:59:51 +0700 Ramas-MBP (1340)] INFO : Finished instrumentation
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] INFO : Environment: development
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] INFO : No known dispatcher detected.
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] INFO : Application: development
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] INFO : Installing Net instrumentation
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:00:18 +0700 Ramas-MBP (1345)] INFO : Finished instrumentation
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Environment: development
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Dispatcher: puma
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Application: development
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Installing Net instrumentation
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Finished instrumentation
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Environment: development
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Dispatcher: puma
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Application: development
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Installing Typhoeus instrumentation
+[2016-03-05 23:11:56 +0700 Ramas-MBP (1365)] INFO : Installing Grape instrumentation
+[2016-03-05 23:12:03 +0700 Ramas-MBP (1365)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 23:12:03 +0700 Ramas-MBP (1365)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 23:12:06 +0700 Ramas-MBP (1365)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 23:12:06 +0700 Ramas-MBP (1365)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 23:12:21 +0700 Ramas-MBP (1365)] INFO : Starting Agent shutdown
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : Environment: development
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : Dispatcher: puma
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : Application: development
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : Installing Net instrumentation
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 23:12:24 +0700 Ramas-MBP (1391)] INFO : Finished instrumentation
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : Environment: development
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : Dispatcher: puma
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : Application: development
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : Installing Net instrumentation
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 23:15:19 +0700 Ramas-MBP (1396)] INFO : Finished instrumentation
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : Environment: development
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : Dispatcher: puma
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : Application: development
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : Installing Net instrumentation
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 23:15:48 +0700 Ramas-MBP (1398)] INFO : Finished instrumentation
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : Environment: development
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : Dispatcher: puma
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : Application: development
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : Installing Net instrumentation
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 23:16:10 +0700 Ramas-MBP (1401)] INFO : Finished instrumentation
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : Environment: development
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : Dispatcher: puma
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : Application: development
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : Installing Net instrumentation
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 23:16:22 +0700 Ramas-MBP (1403)] INFO : Finished instrumentation
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] INFO : Environment: development
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] INFO : No known dispatcher detected.
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] INFO : Application: development
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] INFO : Installing Net instrumentation
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:17:13 +0700 Ramas-MBP (1405)] INFO : Finished instrumentation
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : Environment: development
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : Dispatcher: puma
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : Application: development
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : Installing Net instrumentation
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 23:17:59 +0700 Ramas-MBP (1409)] INFO : Finished instrumentation
+[2016-03-05 23:18:00 +0700 Ramas-MBP (1409)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:18:00 +0700 Ramas-MBP (1409)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:18:00 +0700 Ramas-MBP (1409)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:18:00 +0700 Ramas-MBP (1409)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:18:00 +0700 Ramas-MBP (1409)] INFO : Environment: development
+[2016-03-05 23:18:00 +0700 Ramas-MBP (1409)] INFO : Dispatcher: puma
+[2016-03-05 23:18:00 +0700 Ramas-MBP (1409)] INFO : Application: development
+[2016-03-05 23:18:00 +0700 Ramas-MBP (1409)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:18:00 +0700 Ramas-MBP (1409)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-03-05 23:18:00 +0700 Ramas-MBP (1409)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:18:00 +0700 Ramas-MBP (1409)] INFO : Installing Typhoeus instrumentation
+[2016-03-05 23:18:00 +0700 Ramas-MBP (1409)] INFO : Installing Grape instrumentation
+[2016-03-05 23:18:08 +0700 Ramas-MBP (1409)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 23:18:08 +0700 Ramas-MBP (1409)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 23:18:09 +0700 Ramas-MBP (1409)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 23:18:09 +0700 Ramas-MBP (1409)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 23:18:26 +0700 Ramas-MBP (1409)] INFO : Starting Agent shutdown
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : Environment: development
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : Dispatcher: puma
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : Application: development
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : Installing Net instrumentation
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 23:18:30 +0700 Ramas-MBP (1435)] INFO : Finished instrumentation
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : Environment: development
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : Dispatcher: puma
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : Application: development
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : Installing Net instrumentation
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 23:25:16 +0700 Ramas-MBP (1442)] INFO : Finished instrumentation
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : Environment: development
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : Dispatcher: puma
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : Application: development
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : Installing Net instrumentation
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 23:25:38 +0700 Ramas-MBP (1444)] INFO : Finished instrumentation
+[2016-03-05 23:26:11 +0700 Ramas-MBP (1447)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:26:11 +0700 Ramas-MBP (1447)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:26:11 +0700 Ramas-MBP (1447)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:26:11 +0700 Ramas-MBP (1447)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:26:11 +0700 Ramas-MBP (1447)] INFO : Environment: development
+[2016-03-05 23:26:11 +0700 Ramas-MBP (1447)] INFO : Dispatcher: puma
+[2016-03-05 23:26:11 +0700 Ramas-MBP (1447)] INFO : Application: development
+[2016-03-05 23:26:11 +0700 Ramas-MBP (1447)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:26:11 +0700 Ramas-MBP (1447)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:26:11 +0700 Ramas-MBP (1447)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:26:11 +0700 Ramas-MBP (1447)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:26:11 +0700 Ramas-MBP (1447)] INFO : Installing Net instrumentation
+[2016-03-05 23:26:11 +0700 Ramas-MBP (1447)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] INFO : Finished instrumentation
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] INFO : Environment: development
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] INFO : Dispatcher: puma
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] INFO : Application: development
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] INFO : Installing Typhoeus instrumentation
+[2016-03-05 23:26:12 +0700 Ramas-MBP (1447)] INFO : Installing Grape instrumentation
+[2016-03-05 23:26:19 +0700 Ramas-MBP (1447)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 23:26:19 +0700 Ramas-MBP (1447)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 23:26:23 +0700 Ramas-MBP (1447)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 23:26:23 +0700 Ramas-MBP (1447)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 23:27:01 +0700 Ramas-MBP (1447)] INFO : Starting Agent shutdown
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Environment: development
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Dispatcher: puma
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Application: development
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Installing Net instrumentation
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Finished instrumentation
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:27:04 +0700 Ramas-MBP (1473)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:27:05 +0700 Ramas-MBP (1473)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:27:05 +0700 Ramas-MBP (1473)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:27:05 +0700 Ramas-MBP (1473)] INFO : Environment: development
+[2016-03-05 23:27:05 +0700 Ramas-MBP (1473)] INFO : Dispatcher: puma
+[2016-03-05 23:27:05 +0700 Ramas-MBP (1473)] INFO : Application: development
+[2016-03-05 23:27:05 +0700 Ramas-MBP (1473)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:27:05 +0700 Ramas-MBP (1473)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-03-05 23:27:05 +0700 Ramas-MBP (1473)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:27:05 +0700 Ramas-MBP (1473)] INFO : Installing Typhoeus instrumentation
+[2016-03-05 23:27:05 +0700 Ramas-MBP (1473)] INFO : Installing Grape instrumentation
+[2016-03-05 23:27:10 +0700 Ramas-MBP (1473)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 23:27:10 +0700 Ramas-MBP (1473)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 23:27:12 +0700 Ramas-MBP (1473)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 23:27:12 +0700 Ramas-MBP (1473)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 23:27:26 +0700 Ramas-MBP (1473)] INFO : Starting Agent shutdown
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Environment: development
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Dispatcher: puma
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Application: development
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Installing Net instrumentation
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Installing Sinatra instrumentation
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Finished instrumentation
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] WARN : No configuration file found. Working directory = /Users/Ramadoka/development/side/ruby/ramadoka/example
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] WARN : Looked in these locations (based on defaults): /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/config/newrelic.yml, /Users/Ramadoka/development/side/ruby/ramadoka/example/newrelic.yml, /Users/Ramadoka/.newrelic/newrelic.yml, /Users/Ramadoka/newrelic.yml
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Environment: development
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Dispatcher: puma
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Application: development
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Installing Typhoeus instrumentation
+[2016-03-05 23:27:29 +0700 Ramas-MBP (1499)] INFO : Installing Grape instrumentation
+[2016-03-05 23:27:36 +0700 Ramas-MBP (1499)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 23:27:36 +0700 Ramas-MBP (1499)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 23:27:39 +0700 Ramas-MBP (1499)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 23:27:39 +0700 Ramas-MBP (1499)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 23:27:48 +0700 Ramas-MBP (1499)] INFO : Starting Agent shutdown

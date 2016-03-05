@@ -42,4 +42,5 @@ class Component::Video::Endpoint::V1 < Ramadoka::Endpoint::Base
     optional :per_page, type: Integer, default: 1
   end
 
+  inherit!
 end
