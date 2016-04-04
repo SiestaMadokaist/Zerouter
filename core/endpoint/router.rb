@@ -1,5 +1,5 @@
 class Ramadoka::Endpoint::Router
-  attr_accessor(:resource, :callback, :errors, :optionals, :requireds, :path, :description, :presenter, :method)
+  attr_accessor(:resource, :callback, :errors, :optionals, :requireds, :path, :description, :presenter, :method, :headers)
   # @param klass [Class]
   # @param callback [Symbol]
   # @param resource [String]
@@ -10,6 +10,7 @@ class Ramadoka::Endpoint::Router
     @errors = []
     @optionals = []
     @requireds = []
+    @headers = {}
     @success_block = nil
     @failure_block = nil
     @presenter = nil
@@ -31,6 +32,7 @@ class Ramadoka::Endpoint::Router
     copy.resource = @resource
     copy.success(&@success_block)
     copy.failure(&@failure_block)
+    copy.headers = @headers
     copy
   end
 
@@ -48,6 +50,14 @@ class Ramadoka::Endpoint::Router
   def presenter(value)
     @presenter = value
     # @presenter_block = block
+  end
+
+  # @param name [Symbol]
+  # @param details [Hash]
+  # @param details :description :optional [String]
+  # @param details :required :optional [Boolean]
+  def header(name, details = {})
+    @headers[name] = details
   end
 
   def success(&block)
@@ -109,6 +119,7 @@ class Ramadoka::Endpoint::Router
     _presenter = @presenter || @klass.presenter_entity
     _errors = @klass.errors + @errors
     _params = params
+    _headers = @headers
     _method = @method
     _path = @path
     _klass = @klass # the logic class
@@ -121,7 +132,8 @@ class Ramadoka::Endpoint::Router
         desc(
           _description,
           entity: _presenter,
-          http_codes: _errors
+          http_codes: _errors,
+          headers: _headers
         )
         params do
           _params.each{|p| send(p.category, p.name, p.options) }

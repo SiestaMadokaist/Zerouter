@@ -7,6 +7,7 @@ module Ramadoka
   class API < Grape::API
     namespace :v1 do
       namespace :web do
+        mount Component::Video::Endpoint::V1.mounted_class
       end
     end
     namespace :v2 do
