@@ -10,6 +10,13 @@ class Ramadoka::Endpoint::Router
     @errors = []
     @optionals = []
     @requireds = []
+    @success_block = nil
+    @failure_block = nil
+    @presenter = nil
+  end
+
+  def endpoint
+    @klass
   end
 
   def meta_copy_to_different_klass(other_klass)
@@ -21,6 +28,9 @@ class Ramadoka::Endpoint::Router
     copy.description = @description
     copy.presenter = @presenter
     copy.method = @method
+    copy.resource = @resource
+    copy.success(&@success_block)
+    copy.failure(&@failure_block)
     copy
   end
 
@@ -30,22 +40,36 @@ class Ramadoka::Endpoint::Router
   end
 
   # @param value [String]
-  def description(value)
-    @description = "(#{@klass}) - #{value}"
+  def description(value="")
+    @description = "(#{@klass}.#{@callback}) - #{value}"
   end
 
-  # @param value [Class]
+  # @param value [Class] subclass of Grape::Entity
   def presenter(value)
     @presenter = value
+    # @presenter_block = block
   end
 
+  def success(&block)
+    @success_block = block
+  end
+
+  def failure(&block)
+    @failure_block = block
+  end
+
+  # @param error_code [Integer]
   # @param err [Class]
-  def error(err)
-    @errors << err
+  def error(err, err_code=nil)
+    error_code = Fallback.new(err_code)
+      .fallback_to{ err.code if err.respond_to?(:code) }
+      .fallback_to(503)
+      .value
+    @errors << [error_code, err.name, Ramadoka::Entity::Errors]
   end
 
   # @param value [Symbol]
-  # @param value Value: [:POST, :GET, :DELETE, :HEAD, :MATCH, ...]
+  # @param value Value: [:post, :get, :delete, :head, :, ...]
   def method(value)
     @method = value
   end
@@ -79,17 +103,19 @@ class Ramadoka::Endpoint::Router
   end
 
   # @param klass [Class]
-  # subclass of Grape::API
+  # subclass of Grape::API, a mounted_class
   def add_logic_to(klass)
     _description = @description
-    _presenter = @presenter
-    _errors = @errors
+    _presenter = @presenter || @klass.presenter_entity
+    _errors = @klass.errors + @errors
     _params = params
     _method = @method
     _path = @path
-    _klass = @klass
+    _klass = @klass # the logic class
     _callback = @callback
     _resource = @resource
+    _on_success = @success_block || @klass.success_handler
+    _on_failure = @failure_block || @klass.failure_handler
     klass.instance_exec do
       resource _resource do
         desc(
@@ -101,7 +127,14 @@ class Ramadoka::Endpoint::Router
           _params.each{|p| send(p.category, p.name, p.options) }
         end
         send(_method, _path) do
-          _presenter.represent(_klass.new(self).send(_callback))
+          req = _klass.new(self)
+          begin
+            result = req.send(_callback)
+          rescue => e
+            _on_failure.call(_presenter, e, _errors, req)
+          else
+            _on_success.call(_presenter, result, req)
+          end
         end
       end
     end

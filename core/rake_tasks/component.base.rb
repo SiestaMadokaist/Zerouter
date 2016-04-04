@@ -22,7 +22,7 @@ class ComponentGenerator
     end
 
     def class_name
-      name.capitalize
+      name.camelize
     end
 
     def template
