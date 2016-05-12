@@ -6,13 +6,12 @@ Dir["#{File.dirname(__FILE__)}/component/*/init.rb"].each{|f| require f}
 module Ramadoka
   class API < Grape::API
     namespace :v1 do
-      namespace :mobile do
+      namespace :web do
         mount Component::Video::Endpoint::V1.mounted_class
       end
     end
     namespace :v2 do
-      namespace :mobile do
-        mount Component::Video::Endpoint::V2.mounted_class
+      namespace :web do
       end
     end
 
