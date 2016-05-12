@@ -1,7 +1,10 @@
+require File.expand_path("../environment", __FILE__)
+require File.expand_path("../../core/init.rb", __FILE__)
+Dir["#{File.dirname(__FILE__)}/../core/common/*.rb"].each{|f| require f}
+Dir["#{File.dirname(__FILE__)}//common/**/*.rb"].each{|f| require f}
 Dir["#{File.dirname(__FILE__)}/component/*/init.rb"].each{|f| require f}
 module Ramadoka
   class API < Grape::API
-    format(:json)
     namespace :v1 do
       namespace :mobile do
         mount Component::Video::Endpoint::V1.mounted_class
@@ -20,6 +23,7 @@ module Ramadoka
       header['Access-Control-Expose-Headers'] = 'ETag'
       header['Access-Control-Allow-Credentials'] = 'true'
     end
+    format(:json)
 
     # options "/(*:url)", anchor: false do
     # end

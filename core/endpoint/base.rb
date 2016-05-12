@@ -43,17 +43,6 @@ class Ramadoka::Endpoint::Base
     @routes[methodname] = router
   end
 
-  route!(:route_not_found, "videos") do
-    # for now just template
-    path "/"
-    method :get
-    description "when the item is not found"
-    presenter Ramadoka::Entity::Base
-    error 503, ActiveRecord::RecordNotFound
-    error 503, ActiveRecord::RecordNotUnique
-    optional :optional_param, type: Integer, default: 1
-  end
-
   def self.copy_parent_logic!
     @routes.each do |methodname, prouter|
       my_router = prouter.meta_copy_to_different_klass(self)
@@ -86,6 +75,14 @@ class Ramadoka::Endpoint::Base
 
   def params
     @request.params
+  end
+
+  def page
+    params[:page]
+  end
+
+  def per_page
+    params[:per_page]
   end
 
 end

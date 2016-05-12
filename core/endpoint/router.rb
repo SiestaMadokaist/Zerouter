@@ -10,6 +10,13 @@ class Ramadoka::Endpoint::Router
     @errors = []
     @optionals = []
     @requireds = []
+    @presenter_block = ->(presenter, result, req){
+      if(presenter.nil?)
+        result
+      else
+        presenter.represent(result)
+      end
+    }
   end
 
   def meta_copy_to_different_klass(other_klass)
@@ -35,8 +42,9 @@ class Ramadoka::Endpoint::Router
   end
 
   # @param value [Class]
-  def presenter(value)
+  def presenter(value, &block)
     @presenter = value
+    @presenter_block = block
   end
 
   # @param error_code [Integer]
@@ -91,6 +99,7 @@ class Ramadoka::Endpoint::Router
     _klass = @klass
     _callback = @callback
     _resource = @resource
+    _presenter_block = @presenter_block
     klass.instance_exec do
       resource _resource do
         desc(
@@ -102,7 +111,9 @@ class Ramadoka::Endpoint::Router
           _params.each{|p| send(p.category, p.name, p.options) }
         end
         send(_method, _path) do
-          _presenter.represent(_klass.new(self).send(_callback))
+          req = _klass.new(self)
+          result = req.send(_callback)
+          _presenter_block.call(_presenter, result, req)
         end
       end
     end
